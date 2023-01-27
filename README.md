@@ -1,1 +1,1 @@
-# podiaClone
+# Podia Pricing Page Clone
