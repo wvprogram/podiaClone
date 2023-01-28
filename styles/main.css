@@ -578,6 +578,9 @@ body {
     .section-pricing {
         justify-items: center;
         align-items: center;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
     }
 
     .all-headers {
@@ -589,18 +592,24 @@ body {
         cursor: pointer;
         padding-bottom: 0.5rem;
         border-bottom: 3px solid var(--clr-blue);
+        /* negative margin stops it from moving itself and other elements around it */
+        margin-bottom: -11px;
     }
 
     .shaker-header:hover {
         cursor: pointer;
         padding-bottom: 0.5rem;
         border-bottom: 3px solid var(--clr-dark-purple-bg);
+        /* negative margin stops it from moving itself and other elements around it */
+        margin-bottom: -11px;
     }
 
     .earthquaker-header:hover {
         cursor: pointer;
         padding-bottom: 0.5rem;
         border-bottom: 3px solid var(--clr-brown);
+        /* negative margin stops it from moving itself and other elements around it */
+        margin-bottom: -11px;
     }
 
     .subscription-link {
@@ -697,6 +706,9 @@ body {
     .section-video {
         flex-direction: column;
         justify-content: center;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
     }
 
     .video-tour h2 {
@@ -890,6 +902,7 @@ span:last-child {
 
     .footer-links p:hover {
         color: var(--clr-dark-purple-bg);
+        text-decoration: underline;
     }
 
     .footer-links ul a {
