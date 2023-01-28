@@ -658,7 +658,6 @@ body {
 @media screen and (max-width: 625px) {
     .video-tour h2 {
         line-height: 2rem;
-        font-size: var(--fs-medium);
     }
 
     .video iframe {
@@ -721,9 +720,53 @@ span:last-child {
     color: var(--clr-black-text);
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1160px) {
     .section-question h2 {
+        font-size: var(--fs-large);
+    }
+
+    .section-question p {
+        margin-bottom: 3rem;
+    }
+
+    .section-question ul {
+        gap: 1rem;
+    }
+
+    .section-question ul li span {
         font-size: var(--fs-medium);
+    }
+
+    .bulletin {
+        width: 0.4rem;
+        height: 0.4rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-question {
+        padding: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section-question {
+        padding: 0 7rem;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .section-question {
+        padding: 0 3rem;
+    }
+    
+    .section-question ul li {
+        gap: 1em;
+    }
+
+    .bulletin {
+        padding: 0.8rem;
     }
 }
 
@@ -765,4 +808,24 @@ span:last-child {
 .copyright {
     display: flex;
     gap: 1rem;
+}
+
+@media screen and (max-width: 3000px) {
+    .footer-links {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .footer-links ul {
+        gap: 1rem;
+    }
+
+    .footer-links p {
+        font-size: var(--fs-medium);
+    }
+
+    .footer-links ul a {
+        display: none;
+    }
 }
