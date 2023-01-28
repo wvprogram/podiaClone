@@ -47,206 +47,6 @@
 }
 
 
-/***** Utility Classes *****/
-/* background color */
-.bg-white {
-    background: var(--clr-white-bg);
-}
-
-.bg-brown {
-    background: var(--clr-brown-bg);
-}
-
-.bg-lt-brown {
-    background: var(--clr-lt-brown);
-}
-
-.bg-purple {
-    background: var(--clr-purple);
-}
-
-.bg-lt-purple {
-    background: var(--clr-lt-purple);
-}
-
-.bg-lt-blue {
-    background: var(--clr-lt-blue);
-}
-
-/* text color */
-.text-clr-brown {
-    color: var(--clr-brown-text);
-}
-
-.text-clr-lt-brown {
-    color: var(--clr-lt-brown-text);
-}
-
-.text-clr-white {
-    color: var(--clr-white-bg);
-}
-
-/* accent color */
-.clr-purple {
-    color: var(--clr-purple);
-}
-
-.clr-lt-purple {
-    color: var(--clr-lt-purple);
-}
-
-.clr-blue {
-    color: var(--clr-blue);
-}
-
-.clr-lt-blue {
-    color: var(--clr-lt-blue);
-}
-
-.clr-brown {
-    color: var(--clr-brown);
-}
-
-.clr-lt-brown {
-    color: var(--clr-lt-brown);
-}
-
-/* font family */
-.ff-heading {
-    font-family: var(--ff-heading);
-}
-
-/* font weight */
-.fw-bolder { font-weight: var(--fw-bolder); }
-.fw-bold { font-weight: var(--fw-bold); }
-.fw-semi-bold { font-weight: var(--fw-semi-bold); }
-.fw-regular { font-weight: var(--fw-normal); }
-
-/* heading font changes */
-.fs-xlarge-heading {
-    font-size: var(--fs-xxlarge);
-}
-
-.fs-large-heading {
-    font-size: var(--fs-xlarge);
-}
-
-.fs-medium-heading {
-    font-size: var(--fs-large);
-}
-
-.fs-small-heading {
-    font-size: var(--fs-medium);
-}
-
-/* text font size */
-.fs-small-text {
-    font-size: var(--fs-small);
-}
-
-/* container */
-.container {
-    max-width: 75rem;
-    margin-inline: auto;
-}
-
-/* button */
-.button {
-    cursor: pointer;
-    border-radius: 100vmax;
-    border: 0;
-    text-decoration: none;
-    padding: 1em 2em;
-    font-size: var(--fs-regular);
-}
-
-.button-brown-shadow {
-    box-shadow: 0 1.125em 1em -1em var(--clr-brown-bg);
-    border: 1px solid var(--clr-brown-bg);
-}
-
-.button-brown-shadow:hover {
-    background: var(--clr-dark-brown-bg);
-}
-
-.button-black-shadow {
-    box-shadow: 0 0.7em 1em -1em var(--clr-black-text);
-    border: 1px solid var(--clr-purple);
-}
-
-.button-black-shadow:hover {
-    background: var(--clr-dark-purple-bg);
-}
-
-/* checkmark, bubble, exclamation, and bulletin styling */
-.checkmark {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checkmark-white {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    padding: 20px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.x-mark {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bubble {
-    width: fit-content;
-    padding: 10px;
-    border-radius: 1rem;
-}
-
-.exclamation-style {
-    width: 0.5rem;
-    height: 0.5rem;
-    padding: 5px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--fs-xsmall);
-    border: 1px solid var(--clr-lt-brown-text);
-    color: var(--clr-lt-brown-text);
-}
-
-.bulletin {
-    display: flex;
-    border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
-    padding: 1.2rem;
-    box-shadow: 0 1.125em 1em -1em var(--clr-brown-bg);
-    border: 1px solid var(--clr-brown-bg);
-    background: var(--clr-brown-bg);
-}
-
-.bulletin:hover {
-    background-color: var(--clr-dark-purple-bg);
-}
-
-
 /***** General Styling *****/
 *{
     box-sizing: border-box;
@@ -578,6 +378,7 @@ body {
     .section-pricing {
         justify-items: center;
         align-items: center;
+        width: 100vw;
         border-left: none;
         border-right: none;
         border-radius: 0;
@@ -706,6 +507,7 @@ body {
     .section-video {
         flex-direction: column;
         justify-content: center;
+        width: 100vw;
         border-left: none;
         border-right: none;
         border-radius: 0;
@@ -737,7 +539,9 @@ body {
     .video iframe {
         width: 400px;
         height: 250px;
-        box-shadow: none;
+        box-shadow: 0 0.5rem 0.5rem 0 var(--clr-border-box);
+        border-radius: 0;
+        width: 100vw;
     }
 
     .checkmark-white {
@@ -885,8 +689,13 @@ span:last-child {
 }
 
 @media screen and (max-width: 3000px) {
+    .footer {
+        width: 100vw;
+    }
+    
     .footer-links {
         padding: 0 2rem;
+        width: 100vw;
     }
 }
 
@@ -908,4 +717,204 @@ span:last-child {
     .footer-links ul a {
         display: none;
     }
+}
+
+
+/***** Utility Classes *****/
+/* background color */
+.bg-white {
+    background: var(--clr-white-bg);
+}
+
+.bg-brown {
+    background: var(--clr-brown-bg);
+}
+
+.bg-lt-brown {
+    background: var(--clr-lt-brown);
+}
+
+.bg-purple {
+    background: var(--clr-purple);
+}
+
+.bg-lt-purple {
+    background: var(--clr-lt-purple);
+}
+
+.bg-lt-blue {
+    background: var(--clr-lt-blue);
+}
+
+/* text color */
+.text-clr-brown {
+    color: var(--clr-brown-text);
+}
+
+.text-clr-lt-brown {
+    color: var(--clr-lt-brown-text);
+}
+
+.text-clr-white {
+    color: var(--clr-white-bg);
+}
+
+/* accent color */
+.clr-purple {
+    color: var(--clr-purple);
+}
+
+.clr-lt-purple {
+    color: var(--clr-lt-purple);
+}
+
+.clr-blue {
+    color: var(--clr-blue);
+}
+
+.clr-lt-blue {
+    color: var(--clr-lt-blue);
+}
+
+.clr-brown {
+    color: var(--clr-brown);
+}
+
+.clr-lt-brown {
+    color: var(--clr-lt-brown);
+}
+
+/* font family */
+.ff-heading {
+    font-family: var(--ff-heading);
+}
+
+/* font weight */
+.fw-bolder { font-weight: var(--fw-bolder); }
+.fw-bold { font-weight: var(--fw-bold); }
+.fw-semi-bold { font-weight: var(--fw-semi-bold); }
+.fw-regular { font-weight: var(--fw-normal); }
+
+/* heading font changes */
+.fs-xlarge-heading {
+    font-size: var(--fs-xxlarge);
+}
+
+.fs-large-heading {
+    font-size: var(--fs-xlarge);
+}
+
+.fs-medium-heading {
+    font-size: var(--fs-large);
+}
+
+.fs-small-heading {
+    font-size: var(--fs-medium);
+}
+
+/* text font size */
+.fs-small-text {
+    font-size: var(--fs-small);
+}
+
+/* container */
+.container {
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+/* button */
+.button {
+    cursor: pointer;
+    border-radius: 100vmax;
+    border: 0;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-size: var(--fs-regular);
+}
+
+.button-brown-shadow {
+    box-shadow: 0 1.125em 1em -1em var(--clr-brown-bg);
+    border: 1px solid var(--clr-brown-bg);
+}
+
+.button-brown-shadow:hover {
+    background: var(--clr-dark-brown-bg);
+}
+
+.button-black-shadow {
+    box-shadow: 0 0.7em 1em -1em var(--clr-black-text);
+    border: 1px solid var(--clr-purple);
+}
+
+.button-black-shadow:hover {
+    background: var(--clr-dark-purple-bg);
+}
+
+/* checkmark, bubble, exclamation, and bulletin styling */
+.checkmark {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark-white {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-mark {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.exclamation-style {
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-xsmall);
+    border: 1px solid var(--clr-lt-brown-text);
+    color: var(--clr-lt-brown-text);
+}
+
+.bulletin {
+    display: flex;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    padding: 1.2rem;
+    box-shadow: 0 1.125em 1em -1em var(--clr-brown-bg);
+    border: 1px solid var(--clr-brown-bg);
+    background: var(--clr-brown-bg);
+}
+
+.bulletin:hover {
+    background-color: var(--clr-dark-purple-bg);
 }
