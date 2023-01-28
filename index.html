@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/3021dfb2e8.js" crossorigin="anonymous"></script>
     <title>Podia Clone</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="container">
             <div class="navbar">
                 <nav class="primary-navigation">
@@ -29,29 +30,495 @@
                 <div class="button-wrapper">
                     <button class="button">Login</button>
                     <button class="button bg-brown button-brown-shadow fw-semi-bold">Start Free Trial</button>
+                    <div class="mobile-nav">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="padding-block-large">
+        <section class="main-heading">
             <div class="container">
                 <div class="section-heading">
-                    <h1 class="fs-xlarge-heading ff-heading fw-bold">Get the power of 5+ tools for the price of one.</h1>
+                    <h1 class="fs-xlarge-heading ff-heading fw-bolder">Get the power of 5+ tools for the price of one.</h1>
                     <p class="fs-small-heading text-clr-brown">All plans come with a free 14-day trial, no credit card required.</p>
-                    <button class="button bg-purple text-clr-white button-black-shadow fw-semi-bold">Start your 14 day free trial</button>
+                    <button class="button button-mobile bg-purple text-clr-white button-black-shadow fw-semi-bold">Start your 14 day free trial</button>
+                    <button class="button-mobile bg-purple text-clr-white button-black-shadow fw-semi-bold">Free Trial</button>
                 </div>
             </div>
         </section>
 
-        <section class="padding-block-small">
+        <section class="main-pricing">
             <div class="container">
-                <div class="section-pricing">
-                    
+                <div class="section-pricing bg-white">
+                    <div class="features-header">
+                        <h2 class="ff-heading fs-large-heading fw-bold">Plan Features</h2>
+                    </div>
+                    <div class="mover-header">
+                        <h3 class="ff-heading fs-medium-heading clr-blue fw-bold">Mover</h3>
+                        <span class="fw-bold">$39/mo</span>
+                        <span class="fs-small-text text-clr-brown">$390/yr (Save $78/yr)</span>
+                    </div>
+                    <div class="shaker-header">
+                        <h3 class="ff-heading fs-medium-heading clr-purple fw-bold">Shaker</h3>
+                        <span class="fw-bold">$79/mo</span>
+                        <span class="fs-small-text text-clr-brown">$790/yr (Save $158/yr)</span>
+                    </div>
+                    <div class="earthquaker-header">
+                        <h3 class="ff-heading fs-medium-heading clr-brown fw-bold">Earthquaker</h3>
+                        <span class="fw-bold">$179/mo</span>
+                        <span class="fs-small-text text-clr-brown">$1790/yr (Save $358/yr)</span>
+                    </div>
+                    <div class="section-pricing-header">
+                        <h3 class="ff-heading fs-medium-heading fw-bold">Core</h3>
+                    </div>
+                    <div class="features-core">
+                        <div class="section-pricing-features-core">
+                            <div class="section-pricing-items">
+                                <span>Unlimited everything</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Zero transaction fees</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Free migrations</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>7-days-a-week support</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Additional teammates</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mover-core">
+                        <div class="section-pricing-core">
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="bubble clr-blue bg-lt-blue fs-small-text fw-bold">$20/mo each</div>
+                        </div>
+                    </div>
+                    <div class="shaker-core">
+                        <div class="section-pricing-core">
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="bubble clr-purple bg-lt-purple fs-small-text fw-bold">$20/mo each</div>
+                        </div>
+                    </div>
+                    <div class="earthquaker-core">
+                        <div class="section-pricing-core">
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="bubble clr-brown bg-lt-brown fs-small-text fw-bold">5 included</div>
+                        </div>
+                    </div>
+                    <div class="section-pricing-header">
+                        <h3 class="ff-heading fs-medium-heading fw-bold">Sell</h3>
+                    </div>
+                    <div class="features-sell">
+                        <div class="section-pricing-features-sell">
+                            <div class="section-pricing-items">
+                                <span>Sell online courses</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Sell digital downloads</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Sell webinars</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Host community</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Sell coaching</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mover-sell">
+                        <div class="section-pricing-sell">
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                        </div>
+                    </div>
+                    <div class="shaker-sell">
+                        <div class="section-pricing-sell">
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                        </div>
+                    </div>
+                    <div class="earthquaker-sell">
+                        <div class="section-pricing-sell">
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                        </div>
+                    </div>
+                    <div class="section-pricing-header">
+                        <h3 class="ff-heading fs-medium-heading fw-bold">Market</h3>
+                    </div>
+                    <div class="features-market">
+                        <div class="section-pricing-features-market">
+                            <div class="section-pricing-items">
+                                <span>Custom website</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Customer messaging</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Product bundles</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Free community</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Paid community</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Community members</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Community topics</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Course certificates</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Affiliate marketing</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Embedded checkout</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mover-market">
+                        <div class="section-pricing-market">
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="bubble clr-blue bg-lt-blue fs-small-text fw-bold">1K</div>
+                            <div class="bubble clr-blue bg-lt-blue fs-small-text fw-bold">15K</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                        </div>
+                    </div>
+                    <div class="shaker-market">
+                        <div class="section-pricing-market">
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="bubble clr-purple bg-lt-purple fs-small-text fw-bold">15K</div>
+                            <div class="bubble clr-purple bg-lt-purple fs-small-text fw-bold">Unlimited</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                        </div>
+                    </div>
+                    <div class="earthquaker-market">
+                        <div class="section-pricing-market">
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="bubble clr-brown bg-lt-brown fs-small-text fw-bold">100K</div>
+                            <div class="bubble clr-brown bg-lt-brown fs-small-text fw-bold">Unlimited</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                        </div>
+                    </div>
+                    <div class="section-pricing-header">
+                        <h3 class="ff-heading fs-medium-heading fw-bold">Email Marketing</h3>
+                    </div>
+                    <div class="features-email">
+                        <div class="section-pricing-features-email">
+                            <div class="section-pricing-items">
+                                <span>Unlimited email subscribers</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Monthly email recipients</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mover-email">
+                        <div class="section-pricing-email">
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="bubble clr-blue bg-lt-blue fs-small-text fw-bold">5K</div>
+                        </div>
+                    </div>
+                    <div class="shaker-email">
+                        <div class="section-pricing-email">
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="bubble clr-purple bg-lt-purple fs-small-text fw-bold">15K</div>
+                        </div>
+                    </div>
+                    <div class="earthquaker-email">
+                        <div class="section-pricing-email">
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="bubble clr-brown bg-lt-brown fs-small-text fw-bold">50K</div>
+                        </div>
+                    </div>
+                    <div class="section-pricing-header">
+                        <h3 class="ff-heading fs-medium-heading fw-bold">Extras</h3>
+                    </div>
+                    <div class="features-extras">
+                        <div class="section-pricing-features-extras">
+                            <div class="section-pricing-items">
+                                <span>Zapier triggers</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Zapier actions</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Remove Podia branding</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Dedicated support agent</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Personalized onboarding call</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Monthly group creator call</span>
+                                <span class="exclamation-style fw-bold">i</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Third-party code</span>
+                            </div>
+                            <div class="section-pricing-items">
+                                <span>Team seats</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mover-extras">
+                        <div class="section-pricing-extras-x">
+                            <div class="checkmark clr-blue bg-lt-blue fw-bold">&#10003</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                            <div class="x-mark clr-blue fw-bold">&#10005</div>
+                        </div>
+                    </div>
+                    <div class="shaker-extras">
+                        <div class="section-pricing-extras-x">
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="checkmark clr-purple bg-lt-purple fw-bold">&#10003</div>
+                            <div class="x-mark clr-purple fw-bold">&#10005</div>
+                            <div class="x-mark clr-purple fw-bold">&#10005</div>
+                            <div class="x-mark clr-purple fw-bold">&#10005</div>
+                            <div class="x-mark clr-purple fw-bold">&#10005</div>
+                            <div class="x-mark clr-purple fw-bold">&#10005</div>
+                        </div>
+                    </div>
+                    <div class="earthquaker-extras">
+                        <div class="section-pricing-extras">
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="checkmark clr-brown bg-lt-brown fw-bold">&#10003</div>
+                            <div class="bubble clr-brown bg-lt-brown fs-small-text fw-bold">5K</div>
+                        </div>
+                    </div>
+                    <div class="subscription-link bg-brown">
+                        <p>We'll migrate your content and customers for free when you choose an annual subscription.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-video">
+            <div class="container">
+                <div class="section-video bg-brown">
+                    <div class="video">
+                        <iframe 
+                        src="https://www.youtube.com/embed/fRY0o99F83M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-tour">
+                        <span class="text-clr-lt-brown fs-small-text fw-bold">VIDEO TOUR</span>
+                        <h2 class="ff-heading fs-large-heading fw-bold">Wondering which plan is right for you?</h2>
+                        <ul>
+                            <li>
+                                <span class="checkmark-white bg-white text-clr-lt-brown fw-bold">&#10003</span>
+                                <p class="text-clr-brown">Get a full walkthrough of each of our plans.</p>
+                            </li>
+                            <li>
+                                <span class="checkmark-white bg-white text-clr-lt-brown fw-bold">&#10003</span>
+                                <p class="text-clr-brown">See the features and services Podia offers.</p>
+                            </li>
+                            <li>
+                                <span class="checkmark-white bg-white text-clr-lt-brown fw-bold">&#10003</span>
+                                <p class="text-clr-brown">Understand which plan is the best fit for you.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-question">
+            <div class="container">
+                <div class="section-question">
+                    <h2 class="ff-heading fs-large-heading fw-bold">Frequently Asked Questions</h2>
+                    <p class="text-clr-brown">Don't see your answer? <a href="#">Reach out to us, we'd love to help!</a></p>
+                    <ul>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Can I cancel at any time?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Is it easy to change plans?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Are there any credit card or PayPal fees?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Do I have to choose my plan first?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Can I have a refund?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">How do I get my money?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Do I need a credit card to sign up?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Can I see a demo?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                        <li>
+                            <span class="ff-heading fs-medium-heading fw-regular">Is Podia safe and secure?</span>
+                            <span class="bulletin"></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer bg-brown">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <p class="fw-bold">Sell</p> 
+                        <a href="#">Online Courses</a>
+                        <a href="#">Memberships</a>
+                        <a href="#">Digital Downloads</a>
+                        <a href="#">Webinars</a>
+                        <a href="#">Coaching</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Market</p> 
+                        <a href="#">Email Marketing</a>
+                        <a href="#">Messaging</a>
+                        <a href="#">Custom Website</a>
+                        <a href="#">Affiliate Marketing</a>
+                        <a href="#">Embeds</a>
+                        <a href="#">Integrations</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Compare</p> 
+                        <a href="#">Kajabi</a>
+                        <a href="#">Teachable</a>
+                        <a href="#">Thinkific</a>
+                        <a href="#">ClickFunnels</a>
+                        <a href="#">Gumroad</a>
+                        <a href="#">Podia Alternatives</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Resources</p> 
+                        <a href="#">Blog</a>
+                        <a href="#">Videos</a>
+                        <a href="#">Guides</a>
+                        <a href="#">Wiki</a>
+                        <a href="#">Free Tools</a>
+                        <a href="#">Live Q&A</a>
+                        <a href="#">Live Demo</a>
+                        <a href="#">All Resources</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Podia</p> 
+                        <a href="#">Examples</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">About</a>
+                        <a href="#">Branding</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Referral Program</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Support</p> 
+                        <a href="#">Weekly Demo</a>
+                        <a href="#">Daily Q&A</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                        <p class="fw-bold">Social</p> 
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+                <div class="copyright fs-small-text">
+                    <span>Podia, Inc &#169 2021</span>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
